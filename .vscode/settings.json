@@ -1,6 +1,10 @@
 {
-    "cSpell.words": [
-        "conncon"
-    ],
-    "eslint.enable": false
+  "cSpell.words": ["conncon"],
+  "editor.formatOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ]
 }
