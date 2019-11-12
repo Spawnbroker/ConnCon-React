@@ -2,9 +2,9 @@
   "name": "conncon-react",
   "version": "0.0.0",
   "description": "A project to create the ConnCon.com website in React",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -p",
+    "start": "webpack-dev-server -d --content-base ./public"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/Spawnbroker/ConnCon-React/issues"
   },
-  "homepage": "https://github.com/Spawnbroker/ConnCon-React#readme"
+  "homepage": "https://github.com/Spawnbroker/ConnCon-React#readme",
+  "dependencies": {
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
 }
