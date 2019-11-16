@@ -19,7 +19,7 @@ ReactDOM.render(
   <Wrapper>
     <Title>
       Hello world again this is a really long string and I'd like prettier to
-      handle it for me blah blah blah this line is way too long
+      handle it for me blah blah blah this line is way too long!
     </Title>
   </Wrapper>,
   document.getElementById("root")
