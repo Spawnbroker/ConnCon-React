@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./src/app.tsx",
+  entry: "./src/components/app.tsx",
   output: {
     path: __dirname + "/public",
     filename: "build/app.bundle.js"
@@ -16,8 +16,15 @@ module.exports = {
         use: ["babel-loader", "ts-loader"]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"]
+        test: /\.(png|svg|jpg|gif|pdf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]"
+            }
+          }
+        ]
       }
     ]
   }
